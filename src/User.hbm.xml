@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.duijiaoxiang.model.User" table="users">
+		<!-- id为数据库的主键 column为主键所对的列 type为主键的类型 -->
+		<id name="ucode" column="ucode" type="int">
+			<!-- 主键的自增长 -->
+			<generator class="increment"></generator>
+		</id>
+		<property name="username" column="uname" type="string"></property>
+		<property name="password" column="upass" type="string"></property>
+		<property name="email" column="email" type="string"></property>
+		<property name="register_time" column="regtime" type="date"></property>
+		<property name="school_id" column="schoolid" type="int"></property>
+		<property name="session_id" column="sessionid" type="string"></property>
+		
+	</class>
+</hibernate-mapping>

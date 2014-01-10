@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+	<struts>
+		<constant name="struts.i18n.encoding" value="UTF-8"/>
+		<package name="duijiaoxiang" extends="json-default">
+			<action name="register" class="com.duijiaoxiang.action.RegisterAction" method="saveData">
+				<result name="success" type="json">  
+                	<param name="root">jsonContent</param>
+            	</result> 
+			</action>
+			<action name="login" class="com.duijiaoxiang.action.LoginAction" method="login">
+				<result type="json">
+					<param name="root">jsonContent</param>
+				</result>
+			</action>
+			<action name="reg_validate" class="com.duijiaoxiang.action.RegisterValidateAction" method="checkData"></action>
+			<action name="login_validate" class="com.duijiaoxiang.action.LoginValidateAction" ></action>
+			<action name="logout" class="com.duijiaoxiang.action.LogoutAction" method="logout">
+			</action>
+			<action name="user_info" class="com.duijiaoxiang.action.UserInfoAction" >
+				<result name="success">user/userinfo.jsp</result>
+			</action>
+			<action name="deit_info" class="com.duijiaoxiang.action.EditUserInfoAction">
+				<result name="success">user/edituserinfo.jsp</result>
+			</action>
+			<action name="upproductor" class="com.duijiaoxiang.productors.action.UpProductAction"></action>
+			<action name="upload" class="com.duijiaoxiang.productors.action.Upload">
+				<result name="success" type="redirectAction">pro_detail.action?productorId=${pro_code}</result>
+			</action>
+			<action name="pro_detail" class="com.duijiaoxiang.productors.action.ProductorDetailAction">
+				<result name="success">productor_detail.jsp</result>
+			</action>
+		</package>
+		
+	</struts>

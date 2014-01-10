@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.duijiaoxiang.model.Productor" table="productors">
+		<!-- id为数据库的主键 column为主键所对的列 type为主键的类型 -->
+		<id name="pro_code" column="pro_code" type="int">
+			<!-- 主键的自增长 -->
+			<generator class="increment"></generator>
+		</id>
+		<property name="pro_name" column="pro_name" type="string"></property>
+		<property name="pro_belone" column="pro_belone" type="int"></property>
+		<property name="pro_state" column="pro_state" type="int"></property>
+		<property name="pro_big_code" column="pro_big_code" type="int"></property>
+		<property name="pro_small_code" column="pro_small_code" type="int"></property>
+		<property name="pro_release_time" column="pro_release_time" type="date"></property>
+		<property name="pro_buy_time" column="pro_buy_time" type="date"></property>
+		<property name="pro_buy_price" column="pro_buy_price" type="float"></property>
+		<property name="pro_present_price" column="pro_present_price" type="float"></property>
+		<property name="pro_end_price" column="pro_end_price" type="float"></property>
+		<property name="pro_detail" column="pro_detail" type="string"></property>
+		<property name="pro_tag" column="pro_tag" type="string"></property>
+		<property name="pro_start_time" column="pro_start_time" type="date"></property>
+		<property name="pro_end_time" column="pro_end_time" type="date"></property>
+		<property name="customerid" column="customerid" type="int"></property>
+		
+	</class>
+</hibernate-mapping>

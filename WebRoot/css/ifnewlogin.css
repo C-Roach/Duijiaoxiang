@@ -1,0 +1,99 @@
+.overlay{ position:absolute; display:none; z-index:9999; top:73px; left:0px; width:100%; height:100%; background:#dadee3; opacity:.9; float:left;}
+.ifnewlogin{ position:fixed; display:none; left:50%; top:50%; margin-left:-170px; width:340px; margin-top:-220px; z-index:99999; background:#f9f9f9; border:4px solid rgba(0,0,0,0.3); box-shadow:0px 1px 21px #a6a6a6;}
+.ifnewlogin-inner{ float:left; padding:30px; float:left; width:280px; position:relative; z-index:99999;}
+.ifnewlogin-closer{ background:url(../images/if-new-login-closer.png) no-repeat; cursor:pointer; float:right; width:12px; height:12px; text-indent:-9999em; position:absolute; top:15px; right:15px;}
+.ifnewlogin h4{ color:#0069b7; font-size:18px; font-weight:normal; padding-bottom:20px;}
+.ifnewlogin p{ color:#c9ccd3; line-height:18px;}
+.ifnewlogin label.ifnewlabel{ width:280px; float:left;}
+.ifnewlogin label.ifnewlabel p{ color:#7c8e9f; font-size:14px; line-height:28px; float:left; width:280px;}
+.ifnewlogin label.ifnewlabel p b{ float:left; font-weight:normal;}
+.ifnewlogin label.ifnewlabel p i{ float:right; color:#ff7e00; font-size:12px; font-style:normal;}
+.ifnewlogin label.ifnewlabel .ifnewinput{ border:#e1e1e1 solid 1px; font-family:"STHeiti","Microsoft YaHei",微软雅黑,Tahoma,华文黑体,宋体; line-height:39px; height:39px; width:258px; padding:0px 10px; box-shadow:#ccc 0px 1px 3px inset; float:left;}
+.ifnewlogin label.ifnewlabel .ifnewinput.ifnewwrong{ border:#ff7e00 solid 1px;}
+.ifnewlogin label.ifnewlabel .ifnewinput.ifnewcheckok{ background:url( ../images/ifnew-check-ok.png) #fff right 10px no-repeat;}
+.ifnewlogin-inner .gg_selectBox,.ifnewlogin-inner .gg_selectBox,.ifnewlogin-inner .gg_selectInput,.ifnewlogin-inner .gg_selectBox_wrapper ul{ width:280px;}
+.ifnewlogin-inner .gg_selectBox_wrapper ul li {width:266px;padding-left:15px;}
+.upinto .gg_selectBox,.upinto .gg_selectBox,.upinto .gg_selectInput,.upinto .gg_selectBox_wrapper ul{ width:180px;}
+
+a.ifnew-submit{ display:block; float:left; width:280px; height:50px; line-height:50px; box-shadow:#a6a6a6 0px 1px 1px; color:#fff; font-weight:bold; text-align:center; text-shadow:#3c3c3c 0px 0px 3px; background:#0069b7; font-size:18px; margin-top:15px; cursor:pointer;}
+a.ifnew-submit:hover{ background:#005594;}
+.ifnewlogin-inner span.ifnewloginbottom{ color:#7c8e9f; font-size:14px; width:280px; float:left; margin-top:15px;}
+.search1{
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	line-height:23px; 
+	color:#677889; 
+	outline:none;
+	padding:0px 15px 0px 25px; 
+	width:40px;
+	border:#ffff 1px solid;
+	background-color:#ffffff;
+	background-image: url(../images/sea.png);
+	background-repeat: no-repeat;
+	background-position: left; center;
+	font-size:12px;
+	-webkit-transition:.3s;
+    -moz-transition:.3s;
+	height:26px;
+	box-shadow:0px 1px 1px #708394 inset;
+	font-family:"STHeiti","Microsoft YaHei",微软雅黑,华文黑体,宋体;
+}
+.search1:focus{
+	width:105px;
+	box-shadow:0px 1px 1px #8b9fb0 inset;
+	background-color: #E3EAF0;
+}
+.select{
+    position:relative;
+    padding:5px 5px 2px 5px;    
+    width:95%;
+	border: 1px solid #c9ccd3;
+}
+.select span{
+    cursor:pointer
+}
+#sub_list{
+    position:absolute;
+    padding:0 2px 2px 0;
+    top:28px;
+    left:0;
+    width:60px;
+}
+#sub_list ul{
+    display:block;
+    padding:5px;
+    border:1px solid #E1E1E1;
+    background:#FFF
+}
+#sub_list ul li{
+    border-bottom:1px solid #E1E1E1;
+}
+#sub_list ul li a{
+    display:block;
+    padding:3px 0 2px 3px;
+    text-decoration:none
+}
+#sub_list ul li a:hover{
+    background:#F4F4F4
+}
+.hidden{
+    display:none
+}
+.loginsubmit{
+display: block;
+float: left;
+width: 280px;
+height: 50px;
+line-height: 50px;
+box-shadow: #a6a6a6 0px 1px 1px;
+color: #fff;
+font-weight: bold;
+text-align: center;
+text-shadow: #3c3c3c 0px 0px 3px;
+background: #ab1f04;
+font-size: 24px;
+margin-top: 15px;
+cursor: pointer;
+}
+.loginsubmit:hover{ background:#e95c41;}

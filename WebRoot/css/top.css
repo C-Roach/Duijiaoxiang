@@ -1,0 +1,153 @@
+#scrollUp {
+	bottom: 200px;
+	right: 30px;
+	height: 74px;
+	width: 41px;
+	background-image: url(../images/top.png);
+	_background-image: url(../images/top.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	transition: bottom 0.9s;
+	-webkit-transition: bottom 0.9s;
+	-moz-transition: bottom 0.9s;
+	-o-transition: bottom 0.9s;
+}
+
+#scrollUp:hover {
+	background-position: 0 -74px;
+}
+
+#inner {
+	padding-top: 15px;
+}
+
+/* See license.txt for terms of usage */ /** reset styling **/
+.firebugResetStyles {
+	z-index: 2147483646 !important;
+	top: 0 !important;
+	left: 0 !important;
+	display: block !important;
+	border: 0 none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	outline: 0 !important;
+	min-width: 0 !important;
+	max-width: none !important;
+	min-height: 0 !important;
+	max-height: none !important;
+	position: fixed !important;
+	transform: rotate(0deg) !important;
+	transform-origin: 50% 50% !important;
+	border-radius: 0 !important;
+	box-shadow: none !important;
+	background: transparent none !important;
+	pointer-events: none !important;
+	white-space: normal !important;
+}
+
+.firebugBlockBackgroundColor {
+	background-color: transparent !important;
+}
+
+.firebugResetStyles:before,.firebugResetStyles:after {
+	content: "" !important;
+}
+
+/**actual styling to be modified by firebug theme**/
+.firebugCanvas {
+	display: none !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.firebugLayoutBox {
+	width: auto !important;
+	position: static !important;
+}
+
+.firebugLayoutBoxOffset {
+	opacity: 0.8 !important;
+	position: fixed !important;
+}
+
+.firebugLayoutLine {
+	opacity: 0.4 !important;
+	background-color: #000000 !important;
+}
+
+.firebugLayoutLineLeft,.firebugLayoutLineRight {
+	width: 1px !important;
+	height: 100% !important;
+}
+
+.firebugLayoutLineTop,.firebugLayoutLineBottom {
+	width: 100% !important;
+	height: 1px !important;
+}
+
+.firebugLayoutLineTop {
+	margin-top: -1px !important;
+	border-top: 1px solid #999999 !important;
+}
+
+.firebugLayoutLineRight {
+	border-right: 1px solid #999999 !important;
+}
+
+.firebugLayoutLineBottom {
+	border-bottom: 1px solid #999999 !important;
+}
+
+.firebugLayoutLineLeft {
+	margin-left: -1px !important;
+	border-left: 1px solid #999999 !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.firebugLayoutBoxParent {
+	border-top: 0 none !important;
+	border-right: 1px dashed #E00 !important;
+	border-bottom: 1px dashed #E00 !important;
+	border-left: 0 none !important;
+	position: fixed !important;
+	width: auto !important;
+}
+
+.firebugRuler {
+	position: absolute !important;
+}
+
+.firebugRulerH {
+	top: -15px !important;
+	left: 0 !important;
+	width: 100% !important;
+	height: 14px !important;
+	background: url("data:image/png,") repeat-x !important;
+	border-top: 1px solid #BBBBBB !important;
+	border-right: 1px dashed #BBBBBB !important;
+	border-bottom: 1px solid #000000 !important;
+}
+
+.firebugRulerV {
+	top: 0 !important;
+	left: -15px !important;
+	width: 14px !important;
+	height: 100% !important;
+	background: url("data:image/png,") repeat-y !important;
+	border-left: 1px solid #BBBBBB !important;
+	border-right: 1px solid #000000 !important;
+	border-bottom: 1px dashed #BBBBBB !important;
+}
+
+.overflowRulerX>.firebugRulerV {
+	left: 0 !important;
+}
+
+.overflowRulerY>.firebugRulerH {
+	top: 0 !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.fbProxyElement {
+	position: fixed !important;
+	pointer-events: auto !important;
+}
